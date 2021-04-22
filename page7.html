@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title> CYOAG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="menu-bar">
+    <ul>
+        <li><a href="mainpage.html">Main Page</a></li>
+        <li><a href="#">About the website</a></li>
+        <li><a href="#">Credits</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </div>
+    <h1>Choose Your Own Adventure Game (CYOAG)</h1>
+    <h2>Mystery Adventure</h2>
+    
+    <p><br>You stand on the edge of the clearing and cough politely. The men are in too deep asleep to hear you, and they barely stir. <br>You try again, this time louder and more insistent. One of them rolls over and mutters something under his breath, but that's it. <br/>
+        Just as you consider walking across the clearing and going on your way, you notice another man returning from between the trees.<br/> He's carrying a tin filled with water from a nearby river. He places it down and looks up, spotting you easily.<br/>
+        "Oh! An intruder, are you?" he asks in a gruff voice.<br/>
+        You mutter something about looking for an old house and your car breaking down, and the man starts to laugh.<br/>
+        "Ai, there's a lot of cars that break down out here. It's the road and humidity. The engines can't handle it. <br>I know where your house it, right enough. Come on, follow me." With that, the man stands up and heads into the trees on the opposite side of the clearing.<br/> You race after him, taking care to keep the fire between you and the slumbering oafs and catch up with him a hundred yards or so further along the track.<br/>
+        "Head along here for about five minutes, and you'll be at the house. Don't step off the path, whatever happens. <br>There are far worse things out there than my buddies and me," he says before turning and leaving you alone again. </p>
+                <ul>
+                    <br><li><a href="page9.html">You follow the man's advice and proceed along the track. Go to 9.</a></li>
+                    
+                </ul>
+
+                <div class="right-col">
+                    <img src="play.png" id="icon">
+                </div>
+                
+                <audio id="song">
+                    <source src="song.mp3" type="audio/mp3">
+                </audio>
+            
+                <script>
+                    var song = document.getElementById("song");
+                    var icon = document.getElementById("icon");
+            
+                    icon.onclick = function(){
+                        if (song.paused){
+                            song.play();
+                            icon.src = "pause.png"
+                        }else{
+                            song.pause();
+                            icon.src = "play.png"
+                        }
+                    }
+                </script>
+                <div class="footer">
+        <p>Created by Ben Lumsden - 40429104</p>
+      </div>
+</body>
+
+
+
+
+
+</html>

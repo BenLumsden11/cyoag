@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title> CYOAG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="menu-bar">
+    <ul>
+        <li><a href="mainpage.html">Main Page</a></li>
+        <li><a href="#">About the website</a></li>
+        <li><a href="#">Credits</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </div>
+    <h1>Choose Your Own Adventure Game (CYOAG)</h1>
+    <h2>Mystery Adventure</h2>
+    
+    <p> <br>The old man leads you through knee-high bushes and between twisted trees that reach out and claw at your clothes, but you ignore all of the pain and discomfort to keep up with him. 
+        <br>For somebody so old, he is incredibly sprightly, and he regularly disappears behind distant bushes or thick tree-trunks. 
+        <br>Eventually, you catch up with him just as he comes to a halt in front of a wooden cottage. 
+        <br>It has seen better days, but it still offers some protection from whatever is lurking in the forest.  <br>You follow the man through the front door. </p>
+        <ul>
+            <br><li><a href="mainpage.html">Return to Main Page.</a></li>
+            
+        </ul>
+
+        <div class="right-col">
+            <img src="play.png" id="icon">
+        </div>
+        
+        <audio id="song">
+            <source src="song.mp3" type="audio/mp3">
+        </audio>
+    
+        <script>
+            var song = document.getElementById("song");
+            var icon = document.getElementById("icon");
+    
+            icon.onclick = function(){
+                if (song.paused){
+                    song.play();
+                    icon.src = "pause.png"
+                }else{
+                    song.pause();
+                    icon.src = "play.png"
+                }
+            }
+        </script>
+        
+        <div class="footer">
+        <p>Created by Ben Lumsden - 40429104</p>
+      </div>
+</body>
+
+
+
+
+
+</html>

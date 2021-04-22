@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title> CYOAG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="menu-bar">
+    <ul>
+        <li><a href="mainpage.html">Main Page</a></li>
+        <li><a href="#">About the website</a></li>
+        <li><a href="#">Credits</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </div>
+    <h1>Choose Your Own Adventure Game (CYOAG)</h1>
+    <h2>Mystery Adventure</h2>
+    
+    <br><p>You ignore the shouted pleas of the man behind you and stumble forwards. <br>You push on into the darkness, sprinting faster than ever before. <br>Your heart thuds against your ribcage in perfect timing with your pounding feet. <br/>
+        Suddenly, the world tilts to the side, and you realise you are running over empty air.<br/> You reach out blindly, but there is nothing to grab hold of. As you brace yourself for the inevitable impact, you realise that no money was worth dying for.
+        </p>
+                <ul>
+                    <br><li><a href="mainpage.html">Return to Main Page</a></li>
+                    
+                </ul>
+
+                <div class="right-col">
+                    <img src="play.png" id="icon">
+                </div>
+                
+                <audio id="song">
+                    <source src="song.mp3" type="audio/mp3">
+                </audio>
+            
+                <script>
+                    var song = document.getElementById("song");
+                    var icon = document.getElementById("icon");
+            
+                    icon.onclick = function(){
+                        if (song.paused){
+                            song.play();
+                            icon.src = "pause.png"
+                        }else{
+                            song.pause();
+                            icon.src = "play.png"
+                        }
+                    }
+                </script>
+                <div class="footer">
+        <p>Created by Ben Lumsden - 40429104</p>
+      </div>
+</body>
+
+
+
+
+
+</html>

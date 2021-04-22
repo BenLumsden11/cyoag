@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title> CYOAG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="menu-bar">
+    <ul>
+        <li><a href="index.html">Index Page</a></li>
+        <li><a href="mainpage.html">Start Game</a></li>
+        <li><a href="about.html">About the website</a></li>
+        <li><a href="credits.html">Credits</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </div>
+    <h1>Choose Your Own Adventure Game (CYOAG)</h1>
+    <h2>Mystery Adventure</h2>
+    
+    <p><br>Hello and welcome to my website! <br><br>This section of the website will be dedicated to give credits to the owner of the work I used on certain <br>parts of the website.
+        <br> Music: <a href="https://youtu.be/8n95BNkpVRg">Cyberpunk - JIGLR </a>
+        <br> Background: <a href="pixabay.com">Pixabay </a>
+
+
+
+    <div class="footer">
+        <p>Created by Ben Lumsden - 40429104</p>
+      </div>
+      <div class="right-col">
+        <img src="play.png" id="icon">
+    </div>
+    
+    <audio id="song">
+        <source src="song.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        var song = document.getElementById("song");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            if (song.paused){
+                song.play();
+                icon.src = "pause.png"
+            }else{
+                song.pause();
+                icon.src = "play.png"
+            }
+        }
+    </script>
+
+
+    </body>
+
+
+
+
+
+</html>

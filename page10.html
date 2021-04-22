@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title> CYOAG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="menu-bar">
+    <ul>
+        <li><a href="mainpage.html">Main Page</a></li>
+        <li><a href="#">About the website</a></li>
+        <li><a href="#">Credits</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </div>
+    <h1>Choose Your Own Adventure Game (CYOAG)</h1>
+    <h2>Mystery Adventure</h2>
+    
+    <br><p>You follow the man to saftey. The End. 
+
+    </p>
+    <ul>
+        <br><li><a href="mainpage.html">Return to Starting Page</a></li>
+
+    </ul>
+    <div class="right-col">
+        <img src="play.png" id="icon">
+    </div>
+    
+    <audio id="song">
+        <source src="song.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        var song = document.getElementById("song");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            if (song.paused){
+                song.play();
+                icon.src = "pause.png"
+            }else{
+                song.pause();
+                icon.src = "play.png"
+            }
+        }
+    </script>
+    <div class="footer">
+        <p>Created by Ben Lumsden - 40429104</p>
+      </div>
+</body>
+
+
+
+
+
+</html>

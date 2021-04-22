@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title> CYOAG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="menu-bar">
+    <ul>
+        <li><a href="mainpage.html">Main Page</a></li>
+        <li><a href="#">About the website</a></li>
+        <li><a href="#">Credits</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </div>
+    <h1>Choose Your Own Adventure Game (CYOAG)</h1>
+    <h2>Mystery Adventure</h2>
+    
+    <p><br/>An ethereal wind blows through a gap in the passenger window of your car.<br/>You've tried several times to close it, but it seems like the old girl is finally starting to fall to pieces. <br/> 
+        You remind yourself that it doesn't matter - as soon as you've signed the dusty old lawyer's papers, you'll be rich enough to buy whatever car you want. <br/>
+        It's such a shame that you have to travel all this way, and find your way through the deserted forest, just to meet him. He did seem strangely insistent, though. <br/>
+As you ponder your situation and mentally spend your new fortune, the car lurches and splutters to a stop. 
+You step out and see that the engine is smoking.<br/> You give it a kick, more out of frustration than hope that it will work, and turn to look at the road ahead.<br/>
+The flickering headlamps illuminate a dark road, closely bordered with leafless trees and thick clumps of nettles and ferns. A few hundred yards ahead, the road forks.<br/> 
+You reach into the car and grab the map, but an unfortunate gust of wind snatches it from your grasp and steals it away into the night.<br/>
+You walk as quickly as possible to the split in the road and take in each choice.<br/> 
+To the left, the road seems to dip quickly and is flooded with darkness.<br/> 
+To the right, the road seems flat but less well-worn.<br/> 
+There is a soft, golden glow somewhere in the distance, but you can't make out whether it is a house or something more sinister.</p>
+    <ul>
+        <br><li><a href="page2.html">To head along the road to the left, go to 2.</a></li>
+        <br><li><a href="page3.html">To head along the road to the right, go to 3.</a></li>
+    </ul>
+
+    <div class="footer">
+        <p>Created by Ben Lumsden - 40429104</p>
+      </div>
+    
+      <div class="right-col">
+        <img src="play.png" id="icon">
+    </div>
+    
+    <audio id="song">
+        <source src="song.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        var song = document.getElementById("song");
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function(){
+            if (song.paused){
+                song.play();
+                icon.src = "pause.png"
+            }else{
+                song.pause();
+                icon.src = "play.png"
+            }
+        }
+    </script>
+</body>
+
+
+
+
+
+</html>

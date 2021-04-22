@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title> CYOAG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="menu-bar">
+    <ul>
+        <li><a href="mainpage.html">Main Page</a></li>
+        <li><a href="#">About the website</a></li>
+        <li><a href="#">Credits</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </div>
+    <h1>Choose Your Own Adventure Game (CYOAG)</h1>
+    <h2>Mystery Adventure</h2>
+    
+    <p><br>You wander along the gloomy path, trying to keep the golden glow in your sight at all times.<br/>  It's hard, and trees regularly block your view as the track twists this way and that.<br/>  Eventually, you break out into a clearing, perhaps two dozen feet across, that has been cleared of all debris.
+        <br>In the middle, casting a soft golden glow on the trees is a low fire.<br/>  Around the edge of the fire, four men are sleeping on the ground. <br>Discarded cans of food tell you that they enjoyed a feast of boiled potatoes and beans before drifting off.</p>
+                <ul>
+                    <br><li><a href="page7.html">To wake the men, go to 7.</a></li>
+                    <br><li><a href="page8.html">To tiptoe past them, go to 8.</a></li>
+                </ul>
+                <div class="right-col">
+                    <img src="play.png" id="icon">
+                </div>
+                
+                <audio id="song">
+                    <source src="song.mp3" type="audio/mp3">
+                </audio>
+            
+                <script>
+                    var song = document.getElementById("song");
+                    var icon = document.getElementById("icon");
+            
+                    icon.onclick = function(){
+                        if (song.paused){
+                            song.play();
+                            icon.src = "pause.png"
+                        }else{
+                            song.pause();
+                            icon.src = "play.png"
+                        }
+                    }
+                </script>
+    
+                <div class="footer">
+        <p>Created by Ben Lumsden - 40429104</p>
+      </div>
+
+</body>
+
+
+
+
+
+</html>
